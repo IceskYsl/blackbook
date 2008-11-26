@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require File.join( File.dirname(__FILE__), '../../lib/blackbook.rb' )
+require File.join( File.dirname(__FILE__), '../../lib/schwarzesbuch.rb' )
 require 'optparse'
 
 options = {}

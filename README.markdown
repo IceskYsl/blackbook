@@ -1,5 +1,5 @@
 Blackbook
-http://rubyforge.org/projects/contentfree/
+http://github.com/purzelrakete/blackbook/tree/master
 
 == DESCRIPTION:
   
@@ -41,7 +41,8 @@ If you create an additional importer or exporter - or simply find a bug - please
 
 == INSTALL:
 
-* sudo gem install blackbook
+1. gem sources -a http://gems.github.com
+2. sudo gem install purzelrakete-blackbook
 
 == THANKS:
 

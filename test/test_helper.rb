@@ -45,3 +45,26 @@ module Net #:nodoc:
     end
   end
 end
+
+plugin_root = "#{ File.dirname(__FILE__) }/.."
+
+require 'rubygems'
+require 'test/spec'
+require 'mocha'
+
+module BlackbookExtensions
+  module TestHelper
+    class Credentials
+      attr_accessor :network, :config
+
+      def initialize(network)
+        self.network = network.to_s
+        self.config = YAML.load_file( File.join(File.dirname(__FILE__), "config/credentials.yml") )
+      end
+
+      def get
+        [ self.config[self.network]["username"], self.config[self.network]["password"] ]
+      end
+    end
+  end
+end

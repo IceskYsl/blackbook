@@ -4,7 +4,7 @@ require 'rubygems'
 
 class Blackbook
   include ::Singleton
-  VERSION = '1.0.4'
+  VERSION = '1.0.5'
   
   class BlackbookError < ::StandardError; end
   class BadCredentialsError < BlackbookError; end

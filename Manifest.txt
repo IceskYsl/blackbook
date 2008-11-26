@@ -1,6 +1,6 @@
-History.txt
+CHANGES.markdown
 Manifest.txt
-README.txt
+README.markdown
 Rakefile
 debug_blackbook.rb
 init.rb
