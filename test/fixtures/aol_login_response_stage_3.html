@@ -1,0 +1,61 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head><title>Screen Name Service</title></head>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript"><!--
+    var xdomError = false;
+    function snsRedir(newloc) {
+	var appVer = navigator.appVersion.substring(0,1); var uagent = navigator.userAgent.toLowerCase();
+	if (appVer == '2' || (appVer == '3' && uagent.indexOf('msie') != -1)) {  parent.location = newloc;}
+	else if ( uagent.indexOf('safari') != -1 ) { top.location.href = newloc;}
+	else { parent.location.replace(newloc); }
+    }
+
+    function snsInFrameRedir(newloc) {	
+	    if (navigator.appVersion.substring(0,1) == '2' || (navigator.appVersion.substring(0,1) == '3' && navigator.userAgent.indexOf('MSIE') != -1)) {
+		if( self != top ) document.location = newloc;
+		else parent.location = newloc;
+	    } else {
+		if( self != top ) document.location.replace(newloc);
+		else parent.location.replace(newloc);
+	    }
+    }
+    
+    function snsSubForm(formName, doPOST, redirUrl) {    
+	( doPOST== "true")?  eval ('document.' + formName + '.submit()'): snsRedir(redirUrl);   
+    }
+    function checkErrorAndSubmitForm( formName, doPOST, redirUrl){
+    
+        if( !xdomError ) {
+        
+           snsSubForm( formName, doPOST, redirUrl);
+        
+        }
+        
+    }
+//--></SCRIPT>
+
+
+
+<body onLoad="checkErrorAndSubmitForm('loginForm', 'false', 'http://webmail.aol.com/_cqr/LoginSuccess.aspx?sitedomain=sns.webmail.aol.com&authLev=2&siteState=ver%3A2%7Cac%3AWS%7Cat%3ASNS%7Cld%3Awebmail.aol.com%7Cuv%3AAOL%7Clc%3Aen-us&lang=en&locale=us&uitype=std&mcAuth=%2Fblackbookauthtest%3D%3D');">
+    
+    
+</body></html>        

@@ -1,0 +1,431 @@
+
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><link type="text/css" rel="stylesheet" href="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/styles-lite-all.css" /><script type="text/javascript" src="BasicBundle.js.aspx"></script><script type="text/javascript" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/js/external_compressed/axs.js"></script><script type="text/javascript" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/js/lite_compressed/lite.js"></script><script type="text/javascript" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/js/external_compressed/adsWrapper.js"></script><title>
+	AIM Mail - Contacts
+</title></head>
+
+<body onload="onloadFunctions();">
+
+
+<div class="WSHat">
+	<div class="leftHat">
+		<div class="topHat">
+			<ul class="hatLinks"><li><a target="_blank" href="http://pr.atwola.com/promoclk/100001269x1116143256x1077350428/aol?redir=http:%2F%2Fwww.aol.com">AOL</a></li><li><a target="_blank" href="http://my.aol.com">myAOL</a></li><li class="last"><a target="_blank" href="http://pr.atwola.com/promoclk/100001269x1115550333x1077361411/aol?redir=http:%2F%2Fwww.aol.com%2Fmksplash.adp">Make AOL My Home Page</a></li></ul>
+		</div>
+		<div class="logoArea">
+		<img src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/hat_logo_lite.gif" class="logo" alt="Mail logo">
+		</div>
+		<div class="salutation">
+			Hi, joe.user@aim.com
+			<a href="http://webmail.aol.com/34865/aim/en-us/common/Logout.aspx?siteState=ver%3a3%7cac%3aWS%7cat%3aSNS%7cld%3awebmail.aol.com%7cuv%3aAIM%7clc%3aen-us%7cmt%3aAIM%7csnt%3aScreenName%7crt%3aBASIC" class="signOutLink">
+			Sign Out
+		    </a>
+		</div>
+	</div>
+	
+	<div class="mlBanner">
+	
+<script>
+	var lowRes = false;
+	if (screen.width < 1024) {
+		lowRes = true;
+	}
+</script>
+
+	<div id="myAd">
+		<script type="text/javascript">
+			adsDisableTacoda();
+			var myAd = document.getElementById("myAd");
+			adSetTarget('_blank'); 
+			adSetType("I");
+			if (lowRes) {
+				htmlAdWH(93210713, 468, 60);
+				myAd.className="mlBannerSmall";
+			} else {
+				htmlAdWH(93225974, 728, 90);
+				myAd.className="mlBannerLarge";
+			}	
+		</script>
+	</div>
+	
+	</div>
+	
+	<div class="bottomHat">
+		<div class="topHat_bottom">
+			
+			<script type="text/javascript">
+				var aolHeader = {
+				fSubmitToMsgList: function(sFolder) {
+					if (sFolder) {
+						document.forms.MsgList.folder.value = sFolder;
+					}
+					try{document.forms.MsgList.submit();}catch(ex){}
+				},
+				fSubmitToCompose: function() {
+					if(document.forms.contactListForm) {
+						document.forms.contactListForm.pageAction.value = "compose";
+						document.forms.contactListForm.submit();
+					}
+                         else {
+						document.forms.Compose.submit();
+                         }
+				},
+				fSearchReturnPress: function(event) { 
+					var charCode = (event.charCode) ? event.charCode : ((event.which) ? event.which : event.keyCode);
+	
+					if (charCode == 13 || charCode == 3) {
+						aol.wsl.fbSearchHandler('Search The Web'); 
+					}
+				}
+			};
+			</script>
+			
+			<form>
+				<input type=button value="Check Mail" id="checkMailBtn" onclick="document.forms.MsgList.action='MsgList.aspx#leftNav'; aolHeader.fSubmitToMsgList('Inbox');return false;" />
+				<input type=button value="Compose" id="writeMailBtn" onclick="aolHeader.fSubmitToCompose();return false;" />
+				<input type=hidden name='folder' value='Inbox' />
+			</form>
+			<div class=fieldsetHidden>
+				<form method=POST name=MsgList action='MsgList.aspx' enctype="multipart/form-data" accept-charset=UTF-8>
+					<input type=hidden name='user' value='ULKLrUelQ2' />
+					<input type=hidden name='folder' value='Inbox' />
+					
+					<input type=hidden name='sort' value='received' />
+					<input type=hidden name='sortDir' value='descending' />
+					<input type=hidden name='showUserFolders' value='False' />
+				</form>
+				
+				<form method=POST name=Compose action='Compose.aspx' enctype="multipart/form-data" accept-charset=UTF-8>
+					<input type=hidden name='user' value='ULKLrUelQ2' />
+					<input type=hidden name='folder' value='Inbox' />
+					<input type=hidden name='showUserFolders' value='False' />
+				</form>
+			</div>
+		</div>
+		
+		<div class="searchArea nobr">
+			<form name="searchFormHeader" id="searchHeader" onsubmit="return false;">
+				<input type="text" id=searchEditHeader name="searchQueryHeader" maxlength="256" size=14 onkeypress="aolHeader.fSearchReturnPress(event);" onFocus="aol.wsl.fClearSearchTextboxHeader(this);" class="wsInputDefaultHeader" value="Search The Web">
+				<label for=searchEditHeader><span class=SROnly>Search The Web</span></label>
+				<select id="searchOptions" style=" display: none;" name="searchIn"><option value="http://search.aol.com/aolcom/search?invocationType=wbmailcayman_centered&query=">Whole Web</option></select>
+				<input id="searchSubmitHeader" name="searchSubmitHeader" type=button onclick="return aol.wsl.fbSearchHandler('Search The Web');" disabled="true" value="Search" title="Start searching the Web"/>
+			</form>
+		</div>
+		
+		<div>
+			<span class="searchGoogleText">
+				enhanced<br>by
+			</span>
+			<img alt="Google logo" class="searchGoogle" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" 			style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',src='http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/google_search.png');"/>
+		</div>
+		
+		<div class="adminLinks">
+			<ul class="hatLinks">
+				
+				<li class="link"><a href='GeneralSettings.aspx' onclick="try{document.location='GeneralSettings.aspx?user=ULKLrUelQ2';return false;}catch(e){}">
+				Settings</a></li>
+				<li class="last"><a href="http://help.channels.aol.com/topic.adp?topicId=Product_WebSuiteBasic" onclick="aol.wsl.fOnHelpClick(event, 'http://webmail.aol.com/34865/aim/en-us/'); return false;">Help</a></li>			
+			</ul>
+		</div>
+	</div>
+	
+
+	
+		
+	
+
+</div>
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tblContainer">
+<tr>
+
+	<td class="tblLeftNav">
+		<div class=ws_nav>
+			
+
+<div class=ws_nav_top>
+	
+	<script>
+		var aolLeftNav = {
+			fSubmitToMsgList: function(sFolder) {
+				if (sFolder) {
+					document.forms.MsgList.folder.value = sFolder;
+				}
+				try{document.forms.MsgList.submit();}catch(ex){}
+			},
+			fSubmitToCompose: function() {
+				if(document.forms.contactListForm) {
+					document.forms.contactListForm.pageAction.value = "compose";
+					document.forms.contactListForm.submit();
+				} else {
+					document.forms.Compose.submit();
+				}
+			},
+ 			fSubmitSearchForm: function(){
+ 			
+ 				if(document.forms.searchForm.searchIn.value == "Contacts")
+ 				{
+					document.forms.searchForm.action = "http://webmail.aol.com/34865/aim/en-us/Lite/ContactList.aspx";
+ 					
+ 				}
+			}
+		};
+	</script>
+	<div class="searchArea nobr">
+		<form name="searchForm" id=search method="POST"
+			action="http://webmail.aol.com/34865/aim/en-us/Lite/MsgList.aspx">
+			<input type=hidden name="user" value="ULKLrUelQ2">
+			<input type=hidden name='folder' value='Inbox' />
+			<input type=hidden name="searchAction" value="search">
+			<table align="center"><tbody><tr><td colspan="2">
+			<input type="text" id=searchEdit name="searchQuery" maxlength="256" size=14 onFocus="aol.wsl.fClearSearchTextbox(this);" class="wsInputDefault" value="Search Contacts">
+			<label for=searchEdit><span class=SROnly>Search Mail</span></label>
+			</td></tr><tr><td>
+				<select class ="searchSelect" id=searchOptions name="searchIn">
+				<option value="Contacts">Contacts</option><option value="alltext">Mail All</option><option value="subject">Mail Subject</option><option value="from">Mail Sender</option>
+				</select>
+				</td><td>
+				<input onclick="aolLeftNav.fSubmitSearchForm();" class="goImg" id="searchSubmit" name="searchSubmit" type="image" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" value="Go" title="Start searching mail"/>
+			</td></tr></tbody></table>
+		</form>
+	</div>
+</div>
+		<div class=swAds>
+			
+		<div class="swAd1">
+			<script type="text/javascript">
+				adsDisableTacoda();
+				adSetType("I");
+				adSetTarget('_blank'); 
+				htmlAdWH(93237312, 160, 40);
+			</script>
+		</div>
+	
+		</div>
+	<h1 id=leftNav class=SROnly>
+	<a name=leftNav>List of Folders</a>
+</h1>
+<div class=ws_main_pane>
+	
+	<div id=sysFolders>
+		
+			<div class='navItem '>
+				<div class='navItemLabel'>
+					<a title='Today on AIM' href="Today.aspx?notc=true">
+						<div class='icon iconToday'></div>
+						Today on AIM
+					</a>
+				</div>
+			</div>
+		
+			
+			<div class="navItem "><div class="navItemLabel"><a href='#' id=inboxLnk onclick="aolLeftNav.fSubmitToMsgList('Inbox');return false;" title="Inbox Folder View"><div class="icon iconInbox"></div>Inbox<span id="InboxCount"></span></a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' onclick="aolLeftNav.fSubmitToMsgList('Drafts');return false;" title="Drafts Folder View"><div class="icon iconFolder"></div>Drafts<span id="DraftsCount"></span></a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' id=sentFolderLnk onclick="aolLeftNav.fSubmitToMsgList('Sent');return false;" title="Sent Folder View"><div class="icon iconFolder"></div>Sent</a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' onclick="aolLeftNav.fSubmitToMsgList('SavedIMs');return false;" title="IMs Folder View"><div class="icon iconFolder"></div>IMs</a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' onclick="aolLeftNav.fSubmitToMsgList('Spam');return false;" title="Spam Folder View"><div class="icon iconFolder"></div>Spam<span id="SpamCount"></span></a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' onclick="aolLeftNav.fSubmitToMsgList('Trash');return false;" title="Trash Folder View"><div class="icon iconFolder"></div>Trash</a></div></div>
+		
+	</div> 
+	
+		<div class='navItemContacts'><div class='navItem navItemCurrent'><div class='navItemLabel'><a title='Contacts' id=contactsLnk href="ContactList.aspx?folder=Inbox&showUserFolders=False"><div class='icon iconContacts'></div>Contacts</a></div></div></div>
+
+		
+<div class="navItemMyFolders">
+<a href="foo" onclick="changeShowUserFolders(true); return false;" title="Show all of your folders">
+<div class="twisty twistyClosed">
+<img src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" />
+</div>
+<div class="myFoldersLabel nobr">
+<h2 class="plain">My Folders</h2>
+</div>
+</a>
+<span class="manageFolders wsLink nobr"><a href="Folders.aspx" >Manage Folders</a></span>
+</div>
+
+	
+
+	<script>
+		 axs.keyreg("control+alt+a",aol.wsl.fAutoClick,{des:"Contacts",args:[{sId:"contactsLnk"}]});
+		 axs.keyreg("control+alt+i",aol.wsl.fAutoClick,{des:"Go to Inbox Folder View",args:[{sId:"inboxLnk"}]});
+		 axs.keyreg("control+alt+m",aol.wsl.fAutoClick,{des:"Check Mail",args:[{sId:"checkMailBtn"}]});
+		 axs.keyreg("control+alt+n",aol.wsl.fAutoClick,{des:"Compose",args:[{sId:"writeMailBtn"}]});
+		 axs.keyreg("control+alt+o",aol.wsl.fAutoClick,{des:"Go to Sent Folder View",args:[{sId:"sentFolderLnk"}]});
+	</script>
+</div>
+			<div class=swAds>
+				
+		<div class="swAd1">
+			<script type="text/javascript">
+				adsDisableTacoda();
+				adSetType("I");
+				adSetTarget('_blank'); 
+				htmlAdWH(93210708, 160, 40);
+			</script>
+		</div>
+	
+			</div>
+		</div>
+	</td>
+	<td class="tblMainArea" id="tblMainArea">
+
+
+
+<div class=omniDiv>
+<script type="text/javascript">
+	var s_account = "aolaimmail,aolsvc";
+</script>
+
+<!-- In Omniture H code, the file inclusion has to come first -->
+<script type="text/javascript" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/js/external/OmniUniH.js"></script>
+
+<script type="text/javascript">
+	if (!window.s_265) s_265 = s;
+
+	s_265.channel = "aim.mail";
+	s_265.pageName = "Contact List";
+	s_265.pfxID = "wml";
+	s_265.prop1 = "WebSuite Basic";
+	s_265.prop2 = "Contacts";
+	var idx = document.location.href.indexOf("?");
+	s_265.prop12 = (idx == -1) ? document.location.href : document.location.href.substring(0, idx);
+	var s_code = s_265.t();
+	if (s_code) document.write(s_code);
+</script>
+</div>
+
+
+<div class="contactList">
+<form id="contactListForm" enctype="multipart/form-data" method="post" action="http://webmail.aol.com/34865/aim/en-us/Lite/ContactList.aspx" accept-charset="UTF-8">  
+	
+	<div class="toolbar"><div class="basicControls"><input type="submit" name="NewContact" value="New Contact" id="newContactBtn1" title="New Contact Button" tabindex="-1"/><input type="submit" name="NewList" value="New List" id="newListBtn1" title="New List Button" tabindex="-1"/><input type="submit" name="Import" value="Import" title="Import Button" tabindex="-1"/><input type="submit" name="DeleteContacts" value="Delete" id="deleteContactsBtn1" title="Delete Button" tabindex="-1" onclick="return deleteConfirmation('Are you sure you want to delete the selected contacts?');" disabled="disabled" /><input type="submit" name="SendEmail" id="sendEmailBtn1" title="Send Email Button" value="Email" tabindex="-1"/><input type="button" onclick="ProcessCommand('4','An error occurred while processing your command.','The selection is incorrect.','An unspecified error has occurred.','\n\nIf this problem continues, please see our technical support information at ','No contacts are selected. Please select one or more contacts before using this command.','','http://webmail.aol.com/34865/aim/en-us/Lite/','ULKLrUelQ2');" class="toolbarType" name="messageAction" value="Print" tabindex="-1"></div><div class="toolbarRight"><div style="display:inline;float:left; margin-top:3px;"><span class="showLabel">View:</span><select name ="categoryFilter" class="categoryFilterSelect" title="Category Filter Select" tabindex="-1"/><option value = "All">All</option><option value = "Auto-Added">Auto-Added</option><option value = "Co-Workers">Co-Workers</option><option value = "Family">Family</option><option value = "Friends">Friends</option><option value = "Uncategorized">Uncategorized</option></select><input type="submit" title="Filter Submit Button" tabindex="-1" name="filterSubmitButton" value="Go" onclick="categoryFilterSubmit();"/></div><div style="display:inline;float:right;"><select disabled="disabled" name="pageJumpTo" title="PageJumpTo Select" tabindex="-1"><option class="disabled">Page 1 of 1</option></select><input style="margin-right:5px;" type="submit" title="PageJumpTo Submit Button" tabindex="-1"name="pageJumpAction" value="Go" disabled="disabled"/><img class="prevButtonDisabled" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" id="prevBtn1" title="Previous Button" tabindex="-1"/><img class="nextButtonDisabled" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" id="nextBtn1" title="Next Button" tabindex="-1"/></div></div><div style="clear:both;"></div></div>
+	
+	<h1 id=main class=SROnly><a name=main>Contacts</a></h1>
+	
+	
+	
+	<table width="100%" class="contactListTable" border="0" cellpadding="0" cellspacing="0">
+		<tr><th class="contactCheckCol"><input class="selectAllCB" type="checkbox" name="selectAllCB" onclick="aol.wsl.fContactsSelectAll();"/></th><th class="contactNameCol sortedColumn"><div class="contactNameHeader" onclick="sort('contactListForm','AB_SORT_ASCENDING','AB_SORT_BY_NAME');"><a href="#" class="contactNameHeaderLabel" onclick="sort('contactListForm','AB_SORT_ASCENDING','AB_SORT_BY_NAME');">Name</a></div><div class="sortAscending"></div></th><th class="contactEmailCol"><a href="#" class="contactEmailHeaderLabel" onclick="sort('contactListForm','AB_SORT_DESCENDING','AB_SORT_BY_EMAIL');">Email</a></th><th class="contactPhoneCol"><div class="headerLabel">Phone</div></th><th class="contactEditColSmall"><img src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" width="35" height="1"></th></tr>
+		
+<tr><td class="contactCheck"><input type="checkbox" name="mailto_select" onclick="aol.wsl.fContactsSelectCheckbox(this);" value="3" id="contact_3"/><label for="contact_3"><span class="SROnly">Jane User jane.user</span></label></td>
+<td class="contactName" id="3"><a href="#" id="3" onclick="detailClick('3');" class="contactNameLabel" title="Details-Contact:Jane User jane.user">Jane User</a></td>
+<td class="contactEmail" id="3"><a href="#" id="3" onclick="detailClick('3');" title="Details-Contact:Jane User jane.user"><span class="contactPrimaryEmailLabel">jane.user<span class="contactPrimaryEmailLabel">,</span><span class="contactOtherEmailLabel">jane.user@example.com</span></a></td><td NOWRAP class="contactPhone" id="3" onclick="detailClick('3');"></td>
+<td class="contactEdit" id="3"><a href="#" title="Edit-Contact:Jane User jane.user" id="3" onclick="editClick('3');" class="contactEditLink">Edit</a></td></tr>
+<tr><td class="contactCheck"><input type="checkbox" name="mailto_select" onclick="aol.wsl.fContactsSelectCheckbox(this);" value="4" id="contact_4"/><label for="contact_4"><span class="SROnly">Joe User joe.user@example.com</span></label></td>
+<td class="contactName" id="4"><a href="#" id="4" onclick="detailClick('4');" class="contactNameLabel" title="Details-Contact:Joe User joe.user@example.com">Joe User</a></td>
+<td class="contactEmail" id="4"><a href="#" id="4" onclick="detailClick('4');" title="Details-Contact:Joe User joe.user@example.com"><span class="contactPrimaryEmailLabel">joe.user@example.com</span><span class="contactPrimaryEmailLabel">,</span><span class="contactOtherEmailLabel">joe.user@example2.com</span></a></td><td NOWRAP class="contactPhone" id="4" onclick="detailClick('4');"></td>
+<td class="contactEdit" id="4"><a href="#" title="Edit-Contact:Joe User joe.user@example.com" id="4" onclick="editClick('4');" class="contactEditLink">Edit</a></td></tr>
+
+	<tr><td><img alt="" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" width="15" height="1" /></td><td><img alt="" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" width="150" height="1" /></td><td><img alt="" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" width="1" height="1" /></td><td><img alt="" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" width="100" height="1" /></td><td><img alt="" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" width="45" height="1"/>
+	
+	<!-- suppresses the padding of hidden form elements -->
+	<div style="display:none;">
+	<input type="hidden" name="folder" value="Inbox" />
+	<input type="hidden" id="searchCriteria" name="searchCriteria" value="" /> 
+	<input type="hidden" id="categoryFilterName" name="categoryFilterName" value="" /> 
+	<input type="hidden" id="pageView" name="pageView" value="normal" /> 
+	<input type="hidden" id="pageAction" name="pageAction" value="" /> 
+	<input type="hidden" id="contactUID" name="contactUID" value="" />
+	<input type="hidden" id="cancelBackTo" name="cancelBackTo" value="" /> 
+	<input type="hidden" id="startContact" name="startContact" value="1" />
+	<input type="hidden" id="previousStartContact" name="previousStartContact" value="0" />
+	<input type="hidden" id="nextStartContact" name="nextStartContact" value="0" />
+	<input type="hidden" id="paginationAction" name="paginationAction" value="" />
+	<input type="hidden" id="contactNameSortDir" name="contactNameSortDir" value="AB_SORT_ASCENDING" />
+	<input type="hidden" id="emailSortDir" name="emailSortDir" value="AB_SORT_DESCENDING" />
+	<input type="hidden" id="sortBy" name="sortBy" value="AB_SORT_BY_NAME" />
+	<input type="hidden" name="user" value="ULKLrUelQ2" />
+	</div>
+	</td></tr>
+	</table>
+	
+	<div class="toolbarLower"><div class="basicControls"><input type="submit" name="NewContact" value="New Contact" id="newContactBtn" title="New Contact Button"/><input type="submit" name="NewList" value="New List" id="newListBtn" title="New List Button"/><input type="submit" name="Import" value="Import" title="Import Button"/><input type="submit" name="DeleteContacts" value="Delete" id="deleteContactsBtn" title="Delete Button" onclick="return deleteConfirmation('Are you sure you want to delete the selected contacts?');" disabled="disabled" /><input type="submit" name="SendEmail" id="sendEmailBtn" title="Send Email Button" value="Email"/><input type="button" onclick="ProcessCommand('4','An error occurred while processing your command.','The selection is incorrect.','An unspecified error has occurred.','\n\nIf this problem continues, please see our technical support information at ','No contacts are selected. Please select one or more contacts before using this command.','','http://webmail.aol.com/34865/aim/en-us/Lite/','ULKLrUelQ2');" class="toolbarType" name="messageAction" value="Print"></div><div class="toolbarRight"><div style="display:inline;float:left; margin-top:3px;"><span class="showLabel">View:</span><select name ="categoryFilter" class="categoryFilterSelect" title="Category Filter Select"/><option value = "All">All</option><option value = "Auto-Added">Auto-Added</option><option value = "Co-Workers">Co-Workers</option><option value = "Family">Family</option><option value = "Friends">Friends</option><option value = "Uncategorized">Uncategorized</option></select><input type="submit" title="Filter Submit Button" name="filterSubmitButton" value="Go" onclick="categoryFilterSubmit();"/></div><div style="display:inline;float:right;"><select disabled="disabled" name="pageJumpTo" title="PageJumpTo Select"><option class="disabled">Page 1 of 1</option></select><input style="margin-right:5px;" type="submit" title="PageJumpTo Submit Button"name="pageJumpAction" value="Go" disabled="disabled"/><img class="prevButtonDisabled" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" id="prevBtn" title="Previous Button"/><img class="nextButtonDisabled" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" id="nextBtn" title="Next Button"/></div></div><div style="clear:both;"></div></div>
+	
+	</form>	
+</div>
+
+
+
+<script>
+ axs.keyreg("control+alt+d",aol.wsl.fAutoClick,{des:"Delete Button",args:[{sId:"deleteContactsBtn"}]});
+ axs.keyreg("control+alt+s",aol.wsl.fAutoClick,{des:"Send Email Button",args:[{sId:"sendEmailBtn"}]});
+ axs.keyreg("control+alt+pagedown",aol.wsl.fAutoClick,{des:"Previous",args:[{sId:"prevBtn"}]});
+ axs.keyreg("control+alt+pageup",aol.wsl.fAutoClick,{des:"Next",args:[{sId:"nextBtn"}]});
+</script>
+
+
+
+
+	</td>
+
+</tr>
+<tr><td colspan=2>
+	
+
+<div class="footer_container">
+	<table align="center"><tbody><tr width=100%><td><ul class="hatLinks links"><li><a href="http://webmail.aol.com/34865/aim/en-us/Lite/Today.aspx?AccessibilityRedirect=true" title="Click here for the accessible version">Accessible Version</a></li><li><a href="http://webmail.aol.com/34865/aim/en-us/Suite.aspx?ac=f&amp;r=464" title="Switch to Standard Version">Standard Version</a></li><li><a target="_blank" href="http://www.aol.com/aolnetwork/aolcom_terms.html">Terms of Service</a></li><li><a target="_blank" href="http://about.aol.com/aolnetwork/mem_commitments">Privacy Policy</a></li><li class=last><a target="_blank" href="http://www.aol.com/aolnetwork/trademarks.html">Trademarks</a></li></ul></td></tr></tbody></table>
+	<div class="copyright">&copy; 2008 AOL LLC. All Rights Reserved</div>
+	<script>
+		 axs.l10n.keycap_summary = "This table describes the shortcut keys implemented on this page.";
+		 axs.l10n.keycap_caption = "Key combinations and the actions they invoke.";
+		 axs.l10n.keycap_combo = "Key Combination";
+		 axs.l10n.keycap_act = "Action";
+		 axs.l10n.keycap_keyshow = "Show or hide the keyboard shortcuts table";
+		 axs.l10n.keycap_linkshow = "Click this link to show or hide the keyboard shortcuts table.";
+		 aol.wsl.afRunAtLoad.push(function() { 
+			// Disable the XML/Accessibility feature for the Sony browser. 
+			if (navigator.userAgent.indexOf("Sony/COM2") === -1)
+				axs.keychart();
+		 });
+		 if ((typeof aol != 'undefined') && aol && aol.wsl && aol.wsl.fFocusPerUri) { aol.wsl.fFocusPerUri(); }
+	</script>
+</div>
+</td></tr>
+</table>
+
+
+<iframe id="CheckNewMessagesFrame" height=1 style="visibility:hidden;" src=''></iframe>
+<script>
+	function updateCheckNewMessagesFrame() {
+		var CheckNewMessagesFrame = document.getElementById("CheckNewMessagesFrame");
+		if (CheckNewMessagesFrame) {
+			CheckNewMessagesFrame.src = 'http://webmail.aol.com/34865/aim/en-us/common/rpc/RPC.aspx?user=ULKLrUelQ2&automatic=true&dojo.transport=iframe&requests=[{"stateToken":"-1","action":"CheckNewMessages"}]]';
+		}
+	}
+	setInterval(updateCheckNewMessagesFrame, 120000);
+</script>
+
+
+<script>
+	
+	function onloadFunctions() {
+		try {
+			
+			aol && aol.wsl && aol.wsl.fRunAllOnloads && aol.wsl.fRunAllOnloads();
+		} catch (ex) {
+			//DEBUG alert('Exception in onloadFunctions(): '+ex);
+		}
+	}
+	
+	function setMessageCounts(InboxCount, DraftsCount, SpamCount) {
+		var InboxCountSpan = document.getElementById("InboxCount");
+		if (InboxCountSpan != null && InboxCount != -1) {InboxCountSpan.innerHTML = "&nbsp;(" + InboxCount + ")";}
+		var DraftsCountSpan = document.getElementById("DraftsCount");
+		if (DraftsCountSpan != null && DraftsCount != -1) {DraftsCountSpan.innerHTML = "&nbsp;(" + DraftsCount + ")";}
+		var SpamCountSpan = document.getElementById("SpamCount");
+		if (SpamCountSpan != null && SpamCount != -1) {SpamCountSpan.innerHTML = "&nbsp;(" + SpamCount + ")";}
+		
+					
+	}
+</script>
+
+
+	<iframe height=1 style="visibility:hidden;" src='MailCounts.aspx'></iframe>
+
+
+</body>
+</html>

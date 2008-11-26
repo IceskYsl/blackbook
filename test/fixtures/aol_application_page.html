@@ -1,0 +1,566 @@
+
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><link type="text/css" rel="stylesheet" href="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/styles-lite-all.css" /><script type="text/javascript" src="BasicBundle.js.aspx"></script><script type="text/javascript" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/js/external_compressed/axs.js"></script><script type="text/javascript" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/js/external_compressed/adsWrapper.js"></script><title>
+	AIM Mail - Today on AIM
+</title></head>
+
+<body onload="onloadFunctions();">
+
+
+<div class="WSHat">
+	<div class="leftHat">
+		<div class="topHat">
+			<ul class="hatLinks"><li><a target="_blank" href="http://pr.atwola.com/promoclk/100001269x1116143256x1077350428/aol?redir=http:%2F%2Fwww.aol.com">AOL</a></li><li><a target="_blank" href="http://my.aol.com">myAOL</a></li><li class="last"><a target="_blank" href="http://pr.atwola.com/promoclk/100001269x1115550333x1077361411/aol?redir=http:%2F%2Fwww.aol.com%2Fmksplash.adp">Make AOL My Home Page</a></li></ul>
+		</div>
+		<div class="logoArea">
+		<img src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/hat_logo_lite.gif" class="logo" alt="Mail logo">
+		</div>
+		<div class="salutation">
+			Hi, joe.user@aim.com
+			<a href="http://webmail.aol.com/34865/aim/en-us/common/Logout.aspx?siteState=ver%3a3%7cac%3aWS%7cat%3aSNS%7cld%3awebmail.aol.com%7cuv%3aAIM%7clc%3aen-us%7cmt%3aAIM%7csnt%3aScreenName%7crt%3aBASIC" class="signOutLink">
+			Sign Out
+		    </a>
+		</div>
+	</div>
+	
+	<div class="mlBanner">
+	
+<script>
+	var lowRes = false;
+	if (screen.width < 1024) {
+		lowRes = true;
+	}
+</script>
+
+	<div id="myAd">
+		<script type="text/javascript">
+			adsDisableTacoda();
+			var myAd = document.getElementById("myAd");
+			adSetTarget('_blank'); 
+			adSetType("I");
+			if (lowRes) {
+				htmlAdWH(93210713, 468, 60);
+				myAd.className="mlBannerSmall";
+			} else {
+				htmlAdWH(93225974, 728, 90);
+				myAd.className="mlBannerLarge";
+			}	
+		</script>
+	</div>
+	
+	</div>
+	
+	<div class="bottomHat">
+		<div class="topHat_bottom">
+			
+			<script type="text/javascript">
+				var aolHeader = {
+				fSubmitToMsgList: function(sFolder) {
+					if (sFolder) {
+						document.forms.MsgList.folder.value = sFolder;
+					}
+					try{document.forms.MsgList.submit();}catch(ex){}
+				},
+				fSubmitToCompose: function() {
+					if(document.forms.contactListForm) {
+						document.forms.contactListForm.pageAction.value = "compose";
+						document.forms.contactListForm.submit();
+					}
+                         else {
+						document.forms.Compose.submit();
+                         }
+				},
+				fSearchReturnPress: function(event) { 
+					var charCode = (event.charCode) ? event.charCode : ((event.which) ? event.which : event.keyCode);
+	
+					if (charCode == 13 || charCode == 3) {
+						aol.wsl.fbSearchHandler('Search The Web'); 
+					}
+				}
+			};
+			</script>
+			
+			<form>
+				<input type=button value="Check Mail" id="checkMailBtn" onclick="document.forms.MsgList.action='MsgList.aspx#leftNav'; aolHeader.fSubmitToMsgList('Inbox');return false;" />
+				<input type=button value="Compose" id="writeMailBtn" onclick="aolHeader.fSubmitToCompose();return false;" />
+				<input type=hidden name='folder' value='Inbox' />
+			</form>
+			<div class=fieldsetHidden>
+				<form method=POST name=MsgList action='MsgList.aspx' enctype="multipart/form-data" accept-charset=UTF-8>
+					<input type=hidden name='user' value='ULKLrUelQ2' />
+					<input type=hidden name='folder' value='Inbox' />
+					
+					<input type=hidden name='sort' value='received' />
+					<input type=hidden name='sortDir' value='descending' />
+					<input type=hidden name='showUserFolders' value='False' />
+				</form>
+				
+				<form method=POST name=Compose action='Compose.aspx' enctype="multipart/form-data" accept-charset=UTF-8>
+					<input type=hidden name='user' value='ULKLrUelQ2' />
+					<input type=hidden name='folder' value='Inbox' />
+					<input type=hidden name='showUserFolders' value='False' />
+				</form>
+			</div>
+		</div>
+		
+		<div class="searchArea nobr">
+			<form name="searchFormHeader" id="searchHeader" onsubmit="return false;">
+				<input type="text" id=searchEditHeader name="searchQueryHeader" maxlength="256" size=14 onkeypress="aolHeader.fSearchReturnPress(event);" onFocus="aol.wsl.fClearSearchTextboxHeader(this);" class="wsInputDefaultHeader" value="Search The Web">
+				<label for=searchEditHeader><span class=SROnly>Search The Web</span></label>
+				<select id="searchOptions" style=" display: none;" name="searchIn"><option value="http://search.aol.com/aolcom/search?invocationType=wbmailcayman_centered&query=">Whole Web</option></select>
+				<input id="searchSubmitHeader" name="searchSubmitHeader" type=button onclick="return aol.wsl.fbSearchHandler('Search The Web');" disabled="true" value="Search" title="Start searching the Web"/>
+			</form>
+		</div>
+		
+		<div>
+			<span class="searchGoogleText">
+				enhanced<br>by
+			</span>
+			<img alt="Google logo" class="searchGoogle" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" 			style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',src='http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/google_search.png');"/>
+		</div>
+		
+		<div class="adminLinks">
+			<ul class="hatLinks">
+				
+				<li class="link"><a href='GeneralSettings.aspx' onclick="try{document.location='GeneralSettings.aspx?user=ULKLrUelQ2';return false;}catch(e){}">
+				Settings</a></li>
+				<li class="last"><a href="http://help.channels.aol.com/topic.adp?topicId=Product_WebSuiteBasic" onclick="aol.wsl.fOnHelpClick(event, 'http://webmail.aol.com/34865/aim/en-us/'); return false;">Help</a></li>			
+			</ul>
+		</div>
+	</div>
+	
+
+	
+	<script>
+	 var aol = {wsl: {
+		fResetSearch: function(sDefaultSearchQueryHeader, sDropdownId) {
+			var oForm = document.forms.searchHeader;
+			oForm.searchQueryHeader.value = sDefaultSearchQueryHeader;
+			oForm.searchQueryHeader.className = "wsInputDefaultHeader";
+			oForm[sDropdownId][0].selected = true;
+			oForm.searchSubmitHeader.disabled = true;
+		}
+		,fResetSearchTextbox: function(sDefaultSearchQueryHeader) {
+			var oForm = document.forms.searchHeader;
+			oForm.searchQueryHeader.value = sDefaultSearchQueryHeader;
+			oForm.searchQueryHeader.className = "wsInputDefaultHeader";
+			oForm.searchSubmitHeader.disabled = true;
+		}
+		,fClearSearchTextbox: function() {
+			var oSearchForm = document.forms.search;
+			var oSearchTextbox = oSearchForm.searchEdit;
+			oSearchTextbox.value = "";
+			oSearchTextbox.className = "wsInput";
+		}
+		,fClearSearchTextboxHeader: function() {
+			var oSearchForm = document.forms.searchHeader;
+			var oSearchTextbox = oSearchForm.searchEditHeader;
+			oSearchTextbox.value = "";
+			oSearchTextbox.className = "wsInputHeader";
+			oSearchForm.searchSubmitHeader.disabled = false;
+		}
+		,fbSearchHandler: function(sDefaultSearchQueryHeader) {
+			var oForm = document.forms.searchHeader;
+			var iSelectedOption = oForm["searchIn"].selectedIndex;
+			var searchQuery = oForm.searchQueryHeader.value.replace(/\s+/, "+");
+			aol.wsl.fResetSearchTextbox(sDefaultSearchQueryHeader);
+			window.open(oForm.searchIn.options[iSelectedOption].value + searchQuery);
+			return false;
+		}
+		,fbSearchHandlerForWeb: function(sWebAllSearchUrl, htExtraSearchOptions, sDefaultSearchQueryHeader) {
+			var oForm = document.forms.searchHeader;
+			
+			window.open(sWebAllSearchUrl + oForm.searchQueryHeader.value);
+			aol.wsl.fResetSearchTextbox(sDefaultSearchQueryHeader);
+			return false;
+		}
+		,fOnHelpClick: function(evt, url) {
+		
+			
+			if(!window.event){
+				evt.stopPropagation(); 
+			}
+			
+			if (evt.shiftKey){
+				window.open(url + "tools/Support.aspx");
+			}
+			else
+			{
+				window.open('http://help.channels.aol.com/topic.adp?topicId=Product_WebSuiteBasic');
+			}
+			
+		}
+		,fAutoClick: function(oArgs) {
+			var oTarget = (oArgs && oArgs.sId && document.getElementById(oArgs.sId)) || this;
+			if (!oTarget) {
+				return;
+			} else if (oTarget.onclick) {
+				oTarget.onclick();
+			} else if (oTarget.click) {
+				oTarget.click();
+			} else if (oTarget.href) {
+				try{document.location = oTarget.href;} catch(e) {}
+			}
+		}
+		,afRunAtLoad: []
+		,fRunAllOnloads: function() {
+			for (var i=0, n=aol.wsl.afRunAtLoad.length; i < n; i++) {
+				aol.wsl.afRunAtLoad[i]();
+			}
+		}
+		,fFocusPerUri: function() {
+			
+			aol.wsl.afRunAtLoad.push(function() {
+				var eBeforeShorts = axs && axs.id("axs_kt_pre");
+				if (eBeforeShorts) {
+					axs.focus(eBeforeShorts);
+				}
+			});
+		}
+	 }};
+	</script>
+	
+		
+	
+
+</div>
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tblContainer">
+<tr>
+
+	<td class="tblLeftNav">
+		<div class=ws_nav>
+			
+
+<div class=ws_nav_top>
+	
+	<script>
+		var aolLeftNav = {
+			fSubmitToMsgList: function(sFolder) {
+				if (sFolder) {
+					document.forms.MsgList.folder.value = sFolder;
+				}
+				try{document.forms.MsgList.submit();}catch(ex){}
+			},
+			fSubmitToCompose: function() {
+				if(document.forms.contactListForm) {
+					document.forms.contactListForm.pageAction.value = "compose";
+					document.forms.contactListForm.submit();
+				} else {
+					document.forms.Compose.submit();
+				}
+			},
+ 			fSubmitSearchForm: function(){
+ 			
+ 				if(document.forms.searchForm.searchIn.value == "Contacts")
+ 				{
+					document.forms.searchForm.action = "http://webmail.aol.com/34865/aim/en-us/Lite/ContactList.aspx";
+ 					
+ 				}
+			}
+		};
+	</script>
+	<div class="searchArea nobr">
+		<form name="searchForm" id=search method="POST"
+			action="http://webmail.aol.com/34865/aim/en-us/Lite/MsgList.aspx">
+			<input type=hidden name="user" value="ULKLrUelQ2">
+			<input type=hidden name='folder' value='Inbox' />
+			<input type=hidden name="searchAction" value="search">
+			<table align="center"><tbody><tr><td colspan="2">
+			<input type="text" id=searchEdit name="searchQuery" maxlength="256" size=14 onFocus="aol.wsl.fClearSearchTextbox(this);" class="wsInputDefault" value="Search Mail">
+			<label for=searchEdit><span class=SROnly>Search Mail</span></label>
+			</td></tr><tr><td>
+				<select class ="searchSelect" id=searchOptions name="searchIn">
+				<option value="alltext">Mail All</option><option value="subject">Mail Subject</option><option value="from">Mail Sender</option><option value="Contacts">Contacts</option>
+				</select>
+				</td><td>
+				<input onclick="aolLeftNav.fSubmitSearchForm();" class="goImg" id="searchSubmit" name="searchSubmit" type="image" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" value="Go" title="Start searching mail"/>
+			</td></tr></tbody></table>
+		</form>
+	</div>
+</div>
+		<div class=swAds>
+			
+		<div class="swAd1">
+			<script type="text/javascript">
+				adsDisableTacoda();
+				adSetType("I");
+				adSetTarget('_blank'); 
+				htmlAdWH(93237312, 160, 40);
+			</script>
+		</div>
+	
+		</div>
+	<h1 id=leftNav class=SROnly>
+	<a name=leftNav>List of Folders</a>
+</h1>
+<div class=ws_main_pane>
+	
+	<div id=sysFolders>
+		
+			<div class='navItem navItemCurrent'>
+				<div class='navItemLabel'>
+					<a title='Today on AIM' href="Today.aspx?notc=true">
+						<div class='icon iconToday'></div>
+						Today on AIM
+					</a>
+				</div>
+			</div>
+		
+			
+			<div class="navItem "><div class="navItemLabel"><a href='#' id=inboxLnk onclick="aolLeftNav.fSubmitToMsgList('Inbox');return false;" title="Inbox Folder View"><div class="icon iconInbox"></div>Inbox<span id="InboxCount"></span></a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' onclick="aolLeftNav.fSubmitToMsgList('Drafts');return false;" title="Drafts Folder View"><div class="icon iconFolder"></div>Drafts<span id="DraftsCount"></span></a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' id=sentFolderLnk onclick="aolLeftNav.fSubmitToMsgList('Sent');return false;" title="Sent Folder View"><div class="icon iconFolder"></div>Sent</a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' onclick="aolLeftNav.fSubmitToMsgList('SavedIMs');return false;" title="IMs Folder View"><div class="icon iconFolder"></div>IMs</a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' onclick="aolLeftNav.fSubmitToMsgList('Spam');return false;" title="Spam Folder View"><div class="icon iconFolder"></div>Spam<span id="SpamCount"></span></a></div></div>
+			<div class="navItem "><div class="navItemLabel"><a href='#' onclick="aolLeftNav.fSubmitToMsgList('Trash');return false;" title="Trash Folder View"><div class="icon iconFolder"></div>Trash</a></div></div>
+		
+	</div> 
+	
+		<div class='navItemContacts'><div class='navItem '><div class='navItemLabel'><a title='Contacts' id=contactsLnk href="ContactList.aspx?folder=Inbox&showUserFolders=False"><div class='icon iconContacts'></div>Contacts</a></div></div></div>
+
+		
+<div class="navItemMyFolders">
+<a href="foo" onclick="changeShowUserFolders(true); return false;" title="Show all of your folders">
+<div class="twisty twistyClosed">
+<img src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/aim/en-us/images/space.gif" />
+</div>
+<div class="myFoldersLabel nobr">
+<h2 class="plain">My Folders</h2>
+</div>
+</a>
+<span class="manageFolders wsLink nobr"><a href="Folders.aspx" >Manage Folders</a></span>
+</div>
+
+	
+
+	<script>
+		 axs.keyreg("control+alt+a",aol.wsl.fAutoClick,{des:"Contacts",args:[{sId:"contactsLnk"}]});
+		 axs.keyreg("control+alt+i",aol.wsl.fAutoClick,{des:"Go to Inbox Folder View",args:[{sId:"inboxLnk"}]});
+		 axs.keyreg("control+alt+m",aol.wsl.fAutoClick,{des:"Check Mail",args:[{sId:"checkMailBtn"}]});
+		 axs.keyreg("control+alt+n",aol.wsl.fAutoClick,{des:"Compose",args:[{sId:"writeMailBtn"}]});
+		 axs.keyreg("control+alt+o",aol.wsl.fAutoClick,{des:"Go to Sent Folder View",args:[{sId:"sentFolderLnk"}]});
+	</script>
+</div>
+			<div class=swAds>
+				
+		<div class="swAd1">
+			<script type="text/javascript">
+				adsDisableTacoda();
+				adSetType("I");
+				adSetTarget('_blank'); 
+				htmlAdWH(93210708, 160, 40);
+			</script>
+		</div>
+	
+			</div>
+		</div>
+	</td>
+	<td class="tblMainArea" id="tblMainArea">
+
+
+
+<div class=omniDiv>
+<script type="text/javascript">
+	var s_account = "aolaimmail,aolsvc";
+</script>
+
+<!-- In Omniture H code, the file inclusion has to come first -->
+<script type="text/javascript" src="http://o.aolcdn.com/cdn.webmail.aol.com/34865/js/external/OmniUniH.js"></script>
+
+<script type="text/javascript">
+	if (!window.s_265) s_265 = s;
+
+	s_265.channel = "aim.mail";
+	s_265.pageName = "Today";
+	s_265.pfxID = "wml";
+	s_265.prop1 = "WebSuite Basic";
+	s_265.prop2 = "Mail";
+	var idx = document.location.href.indexOf("?");
+	s_265.prop12 = (idx == -1) ? document.location.href : document.location.href.substring(0, idx);
+	var s_code = s_265.t();
+	if (s_code) document.write(s_code);
+</script>
+</div>
+
+
+
+<div class=TodayOnAOL>
+	
+	<h1 id=main class=SROnly><a name=main>Today on AIM</a></h1>
+	<div class="welcomeMessage">
+	  <div class='TodayHeader'>&nbsp;You're using AIM Mail Basic which is optimized for your computer and browser.</div>
+				
+			<div class='TodayGreeting' id='aolTodayGreeting'></div>
+			<div class="icon"></div>
+			<div class="todayMsgCount">
+			  <a class="msgCountLabel" href="http://webmail.aol.com/34865/aim/en-us/lite/msglist.aspx">
+				
+					<span id="TodayMailCount"></span>
+				
+			  </a>
+			 </div>
+			 
+				
+	 			<div>
+					<a target="_blank" class="mailBlog" href="http://mailblog.aim.com">Need mail tips? Read our blog.</a>
+				</div>
+					   
+			
+			
+		
+			<div class='TodayClock'>
+			  <div class='TodayDate' id='aolLocalDate'></div>
+			  <div class='TodayTime' id='aolLocalTime'></div>
+			</div>
+	  </div>
+		<script>
+			try {
+				//Morning, afternoon, or evening?
+				var dtToday = new Date();
+				var iCurrentHour = dtToday.getHours();
+				var sPartOfDayGreeting;
+				if (iCurrentHour < 12) {
+					sPartOfDayGreeting = "Good Morning, joe.user@aim.com";
+				} else if (iCurrentHour >= 12 && iCurrentHour < 18) {
+					sPartOfDayGreeting = "Good Afternoon, joe.user@aim.com";
+				} else {
+					sPartOfDayGreeting = "Good Evening, joe.user@aim.com";
+				}
+				//defined in BasicBundle.js.aspx
+				
+				var sLocalDate = DateFormat.FormatDate(dtToday, "E, NNN d");
+				
+				var sTimeFormatWithPlaceHolders = "h:mm**a++";
+				
+				var sLocalTimeWithPlaceHolders = DateFormat.FormatDate(dtToday, sTimeFormatWithPlaceHolders);
+				
+				var sLocalTime = sLocalTimeWithPlaceHolders.replace("**","<span class='TodayDate'> ");
+				sLocalTime = sLocalTime.replace("++","</span>");
+												
+				var tnPartOfDayGreeting = document.createTextNode(sPartOfDayGreeting);
+				var eTodayGreeting = document.getElementById('aolTodayGreeting');
+				if (eTodayGreeting && tnPartOfDayGreeting) {
+					eTodayGreeting.appendChild(tnPartOfDayGreeting);
+				}
+						
+				var tnLocalDate = document.createTextNode(sLocalDate);
+				var eLocalDate = document.getElementById('aolLocalDate');
+				if (eLocalDate && tnLocalDate) {
+					eLocalDate.appendChild(tnLocalDate);
+				}
+				
+				
+				var eLocalTime = document.getElementById('aolLocalTime');
+				if (eLocalTime) {
+					eLocalTime.innerHTML = sLocalTime;
+				}
+			} catch (ex) {
+			}
+			
+			
+			function changeShowUserFolders(newValue) {
+				var newURL = window.location.toString().replace(/[&?]showuserfolders=[^&]*/gi,"");
+				newURL += (newURL.indexOf("?") == -1 ? "?" : "&") + "showUserFolders=" + newValue; 
+				window.location.replace(newURL);
+			}
+			function fOpenQuotaWindow() {
+				var url = Config.BaseLitePagesURL + "SwitchQuotaWelcome.aspx?user=" + "ULKLrUelQ2&t=true";
+				var windowParams = "status=yes,resizable=no,menubar=no,scrollbars=no,top=150,screenY=150,left=150,screenX=150,width=480,innerWidth=480,innerHeight=330,height=330,alwaysRaised";	
+				window.open(url, name, windowParams);
+			}
+		</script>
+	
+	<iframe id="TodayiFrame" src="http://welcome.mail.aol.com/beta.adp?type=aim&sr=1" title="Today on AIM" width="100%" height=630px frameborder=0 border=0 marginwidth=0 marginheight=0 scrolling="no" align="top" allowTransparency="true"></iframe>
+	
+	<iframe id="tacoda" src="http://webmail.aol.com/js/external/tcodewm.html" title="" width="1px" height="1px" frameborder=0 border=0 marginwidth=0 marginheight=0 scrolling="no"></iframe>
+	
+</div>
+
+
+
+
+	</td>
+
+</tr>
+<tr><td colspan=2>
+	
+
+<div class="footer_container">
+	<table align="center"><tbody><tr width=100%><td><ul class="hatLinks links"><li><a href="http://webmail.aol.com/34865/aim/en-us/Lite/Today.aspx?AccessibilityRedirect=true" title="Click here for the accessible version">Accessible Version</a></li><li><a target="_blank" href="http://www.aol.com/aolnetwork/aolcom_terms.html">Terms of Service</a></li><li><a target="_blank" href="http://about.aol.com/aolnetwork/mem_commitments">Privacy Policy</a></li><li class=last><a target="_blank" href="http://www.aol.com/aolnetwork/trademarks.html">Trademarks</a></li></ul></td></tr></tbody></table>
+	<div class="copyright">&copy; 2008 AOL LLC. All Rights Reserved</div>
+	<script>
+		 axs.l10n.keycap_summary = "This table describes the shortcut keys implemented on this page.";
+		 axs.l10n.keycap_caption = "Key combinations and the actions they invoke.";
+		 axs.l10n.keycap_combo = "Key Combination";
+		 axs.l10n.keycap_act = "Action";
+		 axs.l10n.keycap_keyshow = "Show or hide the keyboard shortcuts table";
+		 axs.l10n.keycap_linkshow = "Click this link to show or hide the keyboard shortcuts table.";
+		 aol.wsl.afRunAtLoad.push(function() { 
+			// Disable the XML/Accessibility feature for the Sony browser. 
+			if (navigator.userAgent.indexOf("Sony/COM2") === -1)
+				axs.keychart();
+		 });
+		 if ((typeof aol != 'undefined') && aol && aol.wsl && aol.wsl.fFocusPerUri) { aol.wsl.fFocusPerUri(); }
+	</script>
+</div>
+</td></tr>
+</table>
+
+
+<iframe id="CheckNewMessagesFrame" height=1 style="visibility:hidden;" src=''></iframe>
+<script>
+	function updateCheckNewMessagesFrame() {
+		var CheckNewMessagesFrame = document.getElementById("CheckNewMessagesFrame");
+		if (CheckNewMessagesFrame) {
+			CheckNewMessagesFrame.src = 'http://webmail.aol.com/34865/aim/en-us/common/rpc/RPC.aspx?user=ULKLrUelQ2&automatic=true&dojo.transport=iframe&requests=[{"stateToken":"-1","action":"CheckNewMessages"}]]';
+		}
+	}
+	setInterval(updateCheckNewMessagesFrame, 120000);
+</script>
+
+
+<script>
+	
+	function onloadFunctions() {
+		try {
+			
+			aol && aol.wsl && aol.wsl.fRunAllOnloads && aol.wsl.fRunAllOnloads();
+		} catch (ex) {
+			//DEBUG alert('Exception in onloadFunctions(): '+ex);
+		}
+	}
+	
+	function setMessageCounts(InboxCount, DraftsCount, SpamCount) {
+		var InboxCountSpan = document.getElementById("InboxCount");
+		if (InboxCountSpan != null && InboxCount != -1) {InboxCountSpan.innerHTML = "&nbsp;(" + InboxCount + ")";}
+		var DraftsCountSpan = document.getElementById("DraftsCount");
+		if (DraftsCountSpan != null && DraftsCount != -1) {DraftsCountSpan.innerHTML = "&nbsp;(" + DraftsCount + ")";}
+		var SpamCountSpan = document.getElementById("SpamCount");
+		if (SpamCountSpan != null && SpamCount != -1) {SpamCountSpan.innerHTML = "&nbsp;(" + SpamCount + ")";}
+		
+		
+			var TodayMailCountSpan = document.getElementById("TodayMailCount");
+			if (TodayMailCountSpan != null && InboxCount != -1) {
+				if (InboxCount == 0) {
+					TodayMailCountSpan.innerHTML = "0 New Messages";
+				} else if (InboxCount == 1) {	
+					TodayMailCountSpan.innerHTML = "{0} New Message".replace("{0}",InboxCount);
+				} else {	
+					TodayMailCountSpan.innerHTML = "{0} New Messages".replace("{0}",InboxCount);
+				}
+			}
+					
+	}
+</script>
+
+
+	<iframe height=1 style="visibility:hidden;" src='MailCounts.aspx'></iframe>
+
+
+</body>
+</html>

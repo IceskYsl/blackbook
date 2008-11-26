@@ -1,0 +1,433 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sign in to Yahoo!</title>
+<!-- Refresh login page every 15 minutes -->
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="refresh" content="900">
+
+<link rel="stylesheet" type="text/css" href="https://a248.e.akamai.net/sec.yimg.com/lib/common/css/fonts_2.0.0-b2.css">
+<style type="text/css">
+
+
+
+@import url(https://a248.e.akamai.net/sec.yimg.com/lib/reg/css/yregbase_sec_200704191234.css); 
+.ct{background:transparent url(https://a248.e.akamai.net/sec.yimg.com/i/reg/cr_gg_ne.gif) no-repeat top right;top:-1px} 
+.ct .cl{background:transparent url(https://a248.e.akamai.net/sec.yimg.com/i/reg/cr_gg_nw.gif) no-repeat top left} 
+.cb{background:transparent url(https://a248.e.akamai.net/sec.yimg.com/i/reg/cr_gg_se.gif) no-repeat bottom right;bottom:-1px} 
+.cb .cl{background:transparent url(https://login.yahoo.com/i/reg/cr_gg_sw.gif) no-repeat bottom left}
+.clear{clear:both}
+#yreglg select, #yreglg input, #yreglg p, #yreglgtb td, #yreglgtb th{font-size:93%}
+div.yregdsilu h2.yregdnt, div.yregdsilu p.yregsueasy{width:110px}
+/*popup template css */
+#yregtpopup #yregtxt {width:260px;margin:0 0 10px} /* popup template */
+#yregtpopup #yregwp, #yregtpopup #yregmst{width:525px}
+#yregtpopup #yregmst{margin-bottom:5px}
+#yregtpopup #yreglg{margin-bottom:0}
+#yregtpopup #yregft{padding-top:5px}
+/* adding login_verify popup css */
+#yregtgen #yregct{margin-right:15px}
+#yregtgen #yregtxt h2, #yregtpopup #yregtxt h2, #yregpmtxt h3{font:bold 152%/152% arial;color:#333;margin:0}
+#yregtgen #yregtxt p.yregpti, #yregtpopup #yregtxt p.yregpti {color:#666;margin:0 0 2px;font:bold 100%/100% arial}
+#yregtgen #yregtxt, #yregtpopup #yregtxt{margin-bottom:20px}
+#yregtgen #yregtxt #yreghtxt h3, #yregtpopup #yregtxt #yreghtxt h3{margin:0;font:bold 107%/114% arial;color:#8C57A1}
+#yregtgen #yregtxt li h3, #yregtpopup #yregtxt li h3{font:bold 114%/122% arial}
+#yregtgen #yregtxt p, #yregtpopup #yregtxt p{margin:0 0 0.8em;line-height:129%}
+#yregtgen #yregtxt .yregbpt li, #yregtpopup #yregtxt .yregbpt li{margin:0 0 10px 4px;padding:0 0 10px 22px;background:url(https://a248.e.akamai.net/sec.yimg.com/i/reg/purple_arrow.gif) no-repeat 1px 4px}
+#yregtgen.yregab #yregtxt{width:380px}
+#yregtpopup.yregab #yregtxt{width:180px}
+#yregtgen #yregtxt #yreghtxt h2, #yregtpopup #yregtxt #yreghtxt h2{color:#7A067F}
+.yregbx{z-index:3;margin-right:0!important}
+.flicker h3 span {color:#ff0084;font-weight:bold}
+.flicker h3 a {text-decoration:underline;}
+
+/* persistency message right above "sign in" bottom */
+em.nwred a {font-style: normal; font-size: 85%; color:#c00; vertical-align:5px;}
+.kmsibold {font-weight:bold; font-size: 114%;}
+p#sigcopys {text-align: left; font-size: 85%; float: right; padding: .4em; margin: .6em .4em 1em 0; border-bottom: 1px dotted #9D9C9D; border-top: 1px dotted #9D9C9D;}
+#sigcopys label{display:block; margin:-1.5em 0 0 2em;}
+input#persistent {margin-bottom: -0em;}
+.subperstxt {line-height:1.75em;}
+.subperstxt2 {margin: 0 0 0 2em; display:block;}
+/* #yregft p.yregfb { font-size:120%; padding-bottom: 5px; padding-up: 5px} */
+
+.yreglgsb{margin-top:0}
+</style>
+
+
+
+<!--[if IE]>
+<style type="text/css">
+.yregclb{height:1%}
+#yreglgtb td{text-align:left}
+#yreglgtb td input{width:110px} 
+#yregtxt #banner div{position:static}	/* ie z-index context stacking bug work-around */
+#yregtpopup #yregtxt{clear:both; float:left;}
+#yregct{padding:0 0 30px}
+</style>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<style type="text/css">
+.yregclb{height:30em}
+#yregtxt {height:1%}
+p#sigcopys {margin-right:0.2em}
+</style>
+<![endif]-->
+
+</head>
+<!-- ads: 150001456 INT.OFFSET: 0 --> 
+<body id="yregtgen">
+
+<div id="yregwp">
+<!-- begin header -->
+<table id="yregmst" width="750" cellpadding="0" cellspacing="0" border="0"><tr valign="top">
+<td width="100%"><table width="100%" cellspacing="0" border="0"><tr valign="top">
+<td width="1%"><img src="https://a248.e.akamai.net/sec.yimg.com/i/yahoo.gif" alt="Yahoo!" width=147 height=31 border=0></td>
+<td><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr valign="top">
+<td align="right" id="ygmaproplinks" style="padding-right:3px;line-height:12px;"><font face="verdana,geneva,sans-serif" size="-2"><a href="http://www.yahoo.com " target="www" class="header" title="Click here to go to Yahoo! homepage">Yahoo!</a> - <a href="http://help.yahoo.com/help/us/edit/" class="header" target="yhelp" title="Click here for help">Help</a></font></td>
+</tr></table></td></tr></table></td>
+<td align="right" style="padding: 6px 0 0 4px;">
+</td></tr></table>
+
+	
+<!-- end header -->
+<span id="cache"></span>
+
+
+<script type="text/javascript">
+
+function FlashDetector_Detect(targetVersion)
+{
+  var pObj = null;
+  var tokens, len, curr_tok;
+  var hasVersion = -1;
+  var playable = false;
+  if(navigator.mimeTypes && navigator.mimeTypes['application/x-shockwave-flash'])
+  {
+     pObj = navigator.mimeTypes['application/x-shockwave-flash'].enabledPlugin;
+  }
+  if(pObj != null)
+  {
+     tokens = navigator.plugins['Shockwave Flash'].description.split(' ');
+     len = tokens.length;
+     while(len--)
+     {
+        curr_tok = tokens[len];
+        if(!isNaN(parseInt(curr_tok)))
+        {
+           hasVersion = curr_tok;
+           FlashDetector_Version = curr_tok;
+           break;
+        }
+     }
+     if(hasVersion >= targetVersion)
+     {
+        playable = true;
+     }
+     else
+     {
+        playable = false;
+     }
+  }
+  return playable;
+}
+
+var flashDetector_Playable = false;
+var flashDetector_targetVersion = '8'; 
+
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+  
+if (isIE && isWin && !isOpera) {
+    document.write('<scr' + 'ipt language="VBScript"\> \n');
+    document.write('on error resume next \n');
+    document.write('flashDetector_Playable = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash." & flashDetector_targetVersion)))\n');
+    document.write('</scr' + 'ipt\> \n');
+  } else {
+      flashDetector_Playable = FlashDetector_Detect(flashDetector_targetVersion);
+  }
+
+  var flashCode = '';
+
+  if(flashDetector_Playable) {
+ 
+    var ts = (new Date()).getTime( );
+
+    flashCode = '<object type="application/x-shockwave-flash" data="https://login.yahoo.com/login/dataCache.swf" width="0" height="0" id="flashCache"> <param name="allowScriptAccess" value="sameDomain" /> <param name="movie" value="https://login.yahoo.com/login/dataCache.swf?' + ts + '" /> <param name="bgColor" value="#fff" /> </object> ';
+
+  }
+  document.write(flashCode);
+
+</script>
+
+
+<script language="JavaScript">
+    
+function checkBrowser(){
+    var appName = navigator.appName;
+    if( appName == "Microsoft Internet Explorer" )
+    {
+        // this only works in IE 5 for windows and higher ...
+        if( navigator.appVersion.indexOf("Windows") == -1 )
+            return -1;
+        var appVersionAry = navigator.appVersion.split("(");
+        if( appVersionAry.length < 2 )
+            return -1;
+        var appVersion = appVersionAry[1];
+        appVersionAry = appVersion.split("; ");
+        if( appVersionAry.length < 2 )
+            return -1;
+        appVersion = appVersionAry[1];
+        appVersionAry = appVersion.split(" ");
+        if( appVersionAry.length < 2 )
+            return -1;
+        appVersion = appVersionAry[1];
+        var appVersionNumber = parseInt(appVersion);
+
+        if( appVersionNumber < 5 )
+            return -1;
+    }
+    else
+    {
+        return -1;
+    }
+}
+
+</script>
+
+<script language="JavaScript">
+
+function flashCacheReady (initialized){ //invoked directly by Flash
+      getCache();
+ 
+    }
+</script>
+
+ 
+<script language="JavaScript">
+
+var inCache = false;
+ 
+// Get the info from flash
+function getCache(){
+  var o={};
+  o=(document.getElementById("flashCache")).getCache(o);
+  if(o != null) inCache = true; 
+  else return;
+
+  if(o.YL != 'null' && o.YL != null) {
+    document.cookie = o.YL + ";expires=Thu, 15 Apr 2037 20:00:00 GMT;domain=login.yahoo.com;path=/";
+  }
+
+  if(o.F != 'null' && o.F != null) {
+    document.cookie = o.F + ";expires=Thu, 15 Apr 2037 20:00:00 GMT;domain=.yahoo.com;path=/";
+  }
+
+  if(o.YLS != 'null' && o.YLS != null) {
+    if((o.YLS.match("n=0")) != null) {
+      o.YLS = o.YLS.replace("n=0", "n=9");
+    } else {
+      o.YLS = o.YLS.concat("&n=9");
+    }
+    document.cookie = o.YLS + ";expires=Thu, 15 Apr 2037 20:00:00 GMT;domain=.yahoo.com;path=/";
+  }
+
+  if(((o.YL != 'null') && (o.YL != null)) || ((o.F != 'null') && (o.F != null))) { 
+    document.location.reload();
+  }
+}
+
+// If the browser is IE, get from the xml cache as well.
+ 
+if((checkBrowser() != -1) && (inCache == false)) {
+  function getXML(cookieName,header,spanName)
+  {
+      var span = document.getElementById("cache");
+      span.style.behavior = "url('#default#userData')";
+      span.load(spanName);
+  
+      var ckyDate = new Date;
+      ckyDate.setDate(ckyDate.getDate( ) + 7);
+ 
+      var saved = span.getAttribute("saved"+cookieName);
+
+      if((saved == null ) || (saved == "")) return -1;
+      var cookieStr = saved;
+      if(cookieName == "YLS") {
+        if((cookieStr.match("n=0")) != null) {
+          cookieStr = cookieStr.replace("n=0", "n=9");
+        } else {
+          cookieStr = cookieStr.concat("&n=9");
+        }
+      }
+      if (header != ""){
+          cookieStr = cookieStr + ';' + header;
+      }
+      document.cookie = cookieStr;
+      return 0;
+  }
+
+  var ylRes = getXML("YL", "expires = Thu, 15 Apr 2037 20:00:00 GMT; domain=login.yahoo.com; path=/", "YL");
+  var fRes = getXML("F", "expires = Thu, 15 Apr 2037 20:00:00 GMT; domain=.yahoo.com; path=/", "YL");
+  var ylsRes = getXML("YLS", "expires = Thu, 15 Apr 2037 20:00:00 GMT; domain=.yahoo.com; path=/", "YL");
+
+  if(ylRes == 0 || fRes == 0) {
+      document.location.reload();  
+  }
+}
+</script>
+
+
+
+<div id="yregct" class="yregclb">
+	<div id="yreglg">
+<!-- login box goes here -->			
+		<div class="top yregbx">
+    <script type="text/javascript">if(top == self) { document.write("<div class=\"\">")}</script>			<span class="ct"><span class="cl"></span></span>
+			<div class="yregbxi"> 
+<script type="text/javascript">if(top == self) { document.write("") } else  { top.location.href = "http://www.yahoo.com" }</script>            <p>To access Yahoo!...</p> 
+								<!-- <p>you need a Yahoo! ID.</p> -->
+					<div class="yregdsilu">
+						<h2 class="yregdnt">Don't have a Yahoo! ID?</h2>
+						<p class="yregsueasy">Signing up is easy.</p> 
+						<p class="yreglgsut"><a href="https://edit.yahoo.com/config/eval_register?.intl=us&new=1&.done=http%3A//my.yahoo.com&.src=&.v=0&.u=co9n5j13pngot&partner=&.partner=&pkg=&stepid=&.p=&promo=&.last=">Sign Up</a></p>
+					</div>
+					<h2>Already have a Yahoo! ID?</h2>
+					<p>Sign in.</p> 
+	
+				
+				<fieldset>
+				<legend>Login Form</legend>
+<form method="post" action="https://login.yahoo.com/config/login?" autocomplete="off" name="login_form">
+				<input type="hidden" name=".tries" value="1">
+				<input type="hidden" name=".src" value="">
+				<input type="hidden" name=".md5" value="">
+				<input type="hidden" name=".hash" value="">
+				<input type="hidden" name=".js" value="">
+				<input type="hidden" name=".last" value="">
+				<input type="hidden" name="promo" value="">
+				<input type="hidden" name=".intl" value="us">
+				<input type="hidden" name=".bypass" value="">
+				<input type="hidden" name=".partner" value="">
+				<input type="hidden" name=".u" value="co9n5j13pngot">
+				<input type="hidden" name=".v" value="0">
+				<input type="hidden" name=".challenge" value="tf2oNCy4Xxgedai3km.6HIeEF_8I">
+				<input type="hidden" name=".yplus" value="">
+				<input type="hidden" name=".emailCode" value="">
+				<input type="hidden" name="pkg" value="">
+				<input type="hidden" name="stepid" value="">
+				<input type="hidden" name=".ev" value="">
+				<input type="hidden" name="hasMsgr" value="0">
+				<input type="hidden" name=".chkP" value="Y">
+				<input type="hidden" name=".done" value="http://my.yahoo.com">
+				<input type="hidden" name=".pd" value="_ver=0&c=">
+				<table id="yreglgtb" summary="form: login information">
+					<tr>
+						<th><label for="username">Yahoo! ID:</label></th>
+						<td><input name="login" id="username" value="" size="17" class="yreg_ipt" type="text"></td>
+                                                <script language="JavaScript" type="text/javascript">if(document.getElementById) document.getElementById('username').focus();</script>
+					</tr>
+					<tr>
+						<th><label for="passwd">Password:</label></th>
+						<td><input name="passwd" id="passwd" value="" size="17" class="yreg_ipt" type="password"></td>
+					</tr>
+				
+				</table>
+
+<p id="sigcopys"><input type="checkbox" id="persistent" name=".persistent" value="y"
+>  
+    <label for="persistent"> <span class="kmsibold">Keep me signed in</span><br><span class="subperstxt">for 2 weeks unless I sign out.</span> <em class="nwred"><a href="http://us.rd.yahoo.com/reg/login1/suli/pst_help/us//*https://login.yahoo.com/config/login?.src=&.intl=us&.help=4&.v=0&.u=co9n5j13pngot&.last=&promo=&.bypass=&.partner=&pkg=&stepid=&.pd=_ver%3d0%26c=&.ab=&.done=http%3A//my.yahoo.com" tabindex="99999">New!</a></em></label>
+    <span class="subperstxt2">[Uncheck if on a shared computer]</span>
+</p>
+<div class="clear"></div>
+					<p class="yreglgsb"><input type="submit" name=".save" value="Sign In"></p>
+				</form>	
+				</fieldset>
+						<a href="http://us.rd.yahoo.com/reg/login1/suli/forgot_lib/us//*https://edit.yahoo.com/config/eval_forgot_pw?new=1&.done=http%3A//my.yahoo.com&.src=&partner=&.intl=us&pkg=&stepid=&.pd=_ver%3d0%26c=&.ab=&.last=">Forget your ID or password?</a> | <a href="http://us.rd.yahoo.com/reg/login1/suli/sih_lib/us//*https://login.yahoo.com/config/login?.src=&.intl=us&.help=1&.v=0&.u=co9n5j13pngot&.last=&.last=&promo=&.bypass=&.partner=&pkg=&stepid=&.pd=_ver%3d0%26c=&.ab=&.done=http%3A//my.yahoo.com">Help</a>
+					</p>		
+	
+			</div>
+			<span class="cb"><span class="cl"></span></span>
+      <script type="text/javascript">document.write("</div>")</script>
+		</div>
+
+<!-- end login box -->	
+	</div>
+	<div id="yregtxt">	
+<!-- begin left side content -->	
+<div id="yregptxt">
+<p class="yregpti">Welcome to Yahoo!</p>
+<h2>Enjoy all the benefits of Yahoo!.</h2>
+	<ul class="list">
+		<li>Stay in touch with <strong>free Mail and Messenger</strong>.</li>
+		<li><strong>Protect</strong> your PC with <strong>free Anti-Spy</strong> and <strong>Pop-Up Blocker</strong>.</li>
+		<li><strong>Get weather forecasts</strong> and current conditions for your area.</li>
+		
+		<li>Tune in to the latest in <strong>music, entertainment, and sports</strong>.</li>
+	</ul>
+</div>	
+<div id="yregpmtxt">
+	<h3>Get all the best with one Yahoo! ID.</h3>
+	<p>Your Yahoo! ID gives you access to powerful communications tools like mail and instant messaging, security features like email AntiVirus and Pop-Up Blocker, and favorites like online photos and music &#151; <strong>all for free</strong>.</p>
+</div>	<!-- Content module end -->
+	
+<!-- end left side content -->		
+	</div>
+</div>
+<!-- begin footer -->
+
+<div id="yregft">
+    <p>Copyright &copy; 2008 Yahoo! Inc. All rights reserved. <a href="http://docs.yahoo.com/info/copyright/copyright.html" target="cp">Copyright/IP Policy</a> | <a href="http://docs.yahoo.com/info/terms/" target="tos">Terms of Service</a> | <a href="http://security.yahoo.com/" target="sc">Guide to Online Security</a></p>
+  <p>NOTICE: We collect personal information on this site.</p> 
+  <p>To learn more about how we use your information, see our <a href="http://privacy.yahoo.com/" target="_new" title="Click here to view Yahoo! Privacy Policy">Privacy Policy</a></p>
+</div>
+ 
+	
+<!-- end footer -->
+</div>
+</div>
+<script type="text/javascript">
+browser_string = navigator.appVersion + " " + navigator.userAgent;
+if ( browser_string.indexOf("MSIE") < 0 ) {
+	if (navigator.mimeTypes) {
+		for (i = 0 ; i < navigator.mimeTypes.length ; i++) {
+			if (navigator.mimeTypes[i].suffixes.indexOf("yps") > -1) {
+				 doGotIt();
+			}
+		}
+	} else {
+		dontGotIt();
+	}
+} else {
+	if (browser_string.indexOf("Windows")>=0) {
+		doGotIt();
+		document.write('<object classid="clsid:41695A8E-6414-11D4-8FB3-00D0B7730277" CODEBASE="javascript:dontGotIt();" ID="Ymsgr" width="1" height="1">');
+		document.write('</object>');
+	}
+}
+hasMsgr = 0;
+function dontGotIt(){
+  hasMsgr = 0;
+  document.login_form.hasMsgr.value=0;
+}
+function doGotIt(){
+  hasMsgr = 1;
+  document.login_form.hasMsgr.value=1;
+}
+</script>
+
+<!-- spaceid: 150001456 INT.OFFSET: 0 --><!-- SpaceID=0 robot -->
+
+</body>
+</html>
